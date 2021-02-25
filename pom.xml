@@ -12,12 +12,12 @@
   <packaging>hpi</packaging>
   <name>Extensible Choice Parameter plugin</name>
   <description>Jenkins plugin to define choice build parameters where the way to provide choices can be extended.</description>
-  <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+  <url>https://github.com/mamh-java/extensible-choice-parameter-plugin</url>
   
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
-    <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+    <connection>scm:git:https://github.com/mamh-java/extensible-choice-parameter-plugin.git</connection>
+    <developerConnection>scm:git:https://github.com/mamh-java/extensible-choice-parameter-plugin.git</developerConnection>
+    <url>https://github.com/mamh-java/extensible-choice-parameter-plugin</url>
     <tag>HEAD</tag>
   </scm>
   
@@ -25,6 +25,10 @@
     <developer>
       <id>ikedam</id>
       <name>IKEDA Yasuyuki</name>
+    </developer>
+    <developer>
+      <id>bright.ma</id>
+      <name>bright ma</name>
     </developer>
   </developers>
   
@@ -37,8 +41,8 @@
   </licenses>
   
   <properties>
-    <jenkins.version>1.580.1</jenkins.version>
-    <java.level>6</java.level>
+    <jenkins.version>2.249.3</jenkins.version>
+    <slf4jVersion>1.7.26</slf4jVersion>
   </properties>
   
   <dependencies>
