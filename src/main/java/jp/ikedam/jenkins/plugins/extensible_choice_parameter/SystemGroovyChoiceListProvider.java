@@ -45,6 +45,7 @@ import jenkins.model.Jenkins;
 import net.sf.json.JSONObject;
 
 import org.apache.commons.lang.StringUtils;
+import org.jenkinsci.Symbol;
 import org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SecureGroovyScript;
 import org.jenkinsci.plugins.scriptsecurity.scripts.ClasspathEntry;
 import org.kohsuke.stapler.AncestorInPath;
@@ -80,6 +81,7 @@ public class SystemGroovyChoiceListProvider extends ChoiceListProvider
      * </dl>
      */
     @Extension
+    @Symbol({"systemGroovyChoiceListProvider"})
     public static class DescriptorImpl extends Descriptor<ChoiceListProvider>
     {
         /**

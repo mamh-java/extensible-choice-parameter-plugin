@@ -36,6 +36,7 @@ import hudson.model.AbstractProject;
 import hudson.model.Descriptor;
 import hudson.util.ListBoxModel;
 
+import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.QueryParameter;
 
@@ -61,6 +62,7 @@ public class TextareaChoiceListProvider extends AddEditedChoiceListProvider
      * </dl>
      */
     @Extension
+    @Symbol({"textareaChoiceListProvider"})
     public static class DescriptorImpl extends Descriptor<ChoiceListProvider>
     {
         /**

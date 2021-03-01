@@ -37,6 +37,7 @@ import jenkins.model.Jenkins;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.tools.ant.DirectoryScanner;
+import org.jenkinsci.Symbol;
 import org.jvnet.localizer.Localizable;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.QueryParameter;
@@ -389,6 +390,7 @@ public class FilenameChoiceListProvider extends ChoiceListProvider
      * Class for view.
      */
     @Extension
+    @Symbol({"filenameChoiceListProvider"})
     static public class DescriptorImpl extends Descriptor<ChoiceListProvider>
     {
         /**
